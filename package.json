@@ -1,0 +1,28 @@
+{
+  "name": "chromeextention",
+  "version": "1.0.0",
+  "description": "LingAny extention",
+  "main": "./dist/bundle.js",
+  "dependencies": {
+    "ts-loader": "^4.4.2",
+    "typescript": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "browserify": "^16.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grigorevpv/ChromeExtention.git"
+  },
+  "author": "Grigorev Pavel grigorevpv@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grigorevpv/ChromeExtention/issues"
+  },
+  "homepage": "https://github.com/grigorevpv/ChromeExtention#readme"
+}

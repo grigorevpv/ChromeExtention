@@ -1,7 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <script src="dist/main.js"></script>
+  <style>
+    .tsl {
+      visibility: hidden;
+      display: block;
+      position: absolute;
+      left: 200px;
+      top: 150px;
+      background-color: aqua;
+    }
+  </style>
   <body>
+    <script>
+      document.addEventListener('dblclick', function(event){
+        console.log("in dblclick");
+        var s = window.getSelection();
+        console.log(s.toString());
+        let tsl = document.getElementsByClassName("tsl")[0];
+        tsl.style.visibility = "visible";
+        tsl.style.left = `${event.pageX-25}px`;
+        tsl.style.top = `${event.pageY-25}px`;
+        const res = tsf.Translate("word")
+        console.log(res);
+      });  
+    </script>
+    <div class="tsl">
+      Translate
+    </div>
     <p>Double-click this paragraph to trigger a function.</p>
     <p id="demo"></p>
   </body>
