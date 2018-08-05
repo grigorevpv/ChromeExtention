@@ -1,0 +1,1 @@
+export const LANGUAGE_URL = 'http://185.143.172.57/api/v1/lingany-da/languages/';
