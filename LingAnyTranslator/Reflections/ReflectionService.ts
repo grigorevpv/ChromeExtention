@@ -4,6 +4,8 @@ import fetch from 'node-fetch';
 import { IReflectionService } from './IReflectionSevice';
 import { Reflection } from './Reflection';
 import { REFLECTION_URL } from './ReflectionUrl';
+import { Language } from '../Languages/Language';
+import { LanguageService } from '../Languages/LanguageService';
 
 export class ReflectionService implements IReflectionService {
 
