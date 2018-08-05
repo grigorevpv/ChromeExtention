@@ -2,15 +2,22 @@ import { TranslateServiceFactory } from '../LingAnyTranslator/TranslateServiceFa
 import { TranslateElement } from '../LingAnyTranslator/TranslateElement';
 
 const tsf = TranslateServiceFactory.CreateTranslater("en", "ru");
-const translateElem = new TranslateElement().CreateTranslateElement();
+const translateElem = new TranslateElement();
 
 document.addEventListener('dblclick', function(event){
-  debugger;
-  console.log("in dblclick");
+  if (translateElem.translateElem) {
+    console.log("try delet");
+    document.getElementById("translateElem").remove();
+  }
   var s = window.getSelection();
   console.log(s.toString());
+  translateElem.CreateTranslateElement();
+  translateElem.SetTextContent(s.toString());
+  translateElem.SetPosition(event.pageX, event.pageY);
+  translateElem.RevealElement();
   var body = document.getElementsByTagName("body")[0];
-  body.appendChild(newNode);
+  console.log(translateElem.translateElem);
+  body.appendChild(translateElem.translateElem);
   const res = tsf.Translate("word")
   console.log(res);
 });

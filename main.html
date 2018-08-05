@@ -13,15 +13,8 @@
   <body>
     <script>
       document.addEventListener('dblclick', function(event){
-        console.log("in dblclick");
-        var s = window.getSelection();
-        console.log(s.toString());
-        let tsl = document.getElementsByClassName("tsl")[0];
-        tsl.style.visibility = "visible";
-        tsl.style.left = `${event.pageX-25}px`;
-        tsl.style.top = `${event.pageY-25}px`;
-        const res = tsf.Translate("word")
-        console.log(res);
+        var userLang = navigator.language || navigator.userLanguage; 
+        alert ("The language is: " + userLang);
       });  
     </script>
     <div class="tsl">

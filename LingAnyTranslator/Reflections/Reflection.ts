@@ -20,5 +20,6 @@ export class Reflection {
     this.Title = data['title'];
     this.ForeignLanguage = data['foreignLanguage'] && new Language().fromJSON(data['foreignLanguage']);
     this.NativeLanguage = data['nativeLanguage'] && new Language().fromJSON(data['nativeLanguage']);
+    return this;
   }
 }
