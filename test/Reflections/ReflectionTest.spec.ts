@@ -1,6 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
 import { assert } from 'chai';
-import fetch from 'node-fetch';
 
 import { ReflectionService } from '../../LingAnyTranslator/Reflections/ReflectionService';
 
