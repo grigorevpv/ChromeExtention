@@ -1,5 +1,5 @@
-import { TranslateServiceFactory } from '../LingAnyTranslator/TranslateServiceFactory';
-import { TranslateElement } from '../LingAnyTranslator/TranslateElement';
+import { TranslateServiceFactory } from '../../LingAnyTranslator/TranslateServiceFactory';
+import { TranslateElement } from '../../LingAnyTranslator/TranslateElement';
 
 const tsf = TranslateServiceFactory.CreateTranslater("ru", "en");
 const translateElem = new TranslateElement();
